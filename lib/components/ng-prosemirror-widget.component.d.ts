@@ -23,5 +23,5 @@ export declare abstract class NgProsemirrorWidget implements AfterViewInit {
     ngAfterViewInit(): void;
     onWidgetViewReady: EventEmitter<CoreWidgetView<NgEditorViewComponent>>;
     static ɵfac: i0.ɵɵFactoryDeclaration<NgProsemirrorWidget, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<NgProsemirrorWidget, "ng-prosemirror-widget", never, { "key": { "alias": "key"; "required": false; }; "provider": { "alias": "provider"; "required": false; }; }, { "onWidgetViewReady": "onWidgetViewReady"; }, never, never, true, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<NgProsemirrorWidget, "ng-prosemirror-widget", never, { "key": { "alias": "key"; "required": false; }; "provider": { "alias": "provider"; "required": false; }; }, { "onWidgetViewReady": "onWidgetViewReady"; }, never, never, true, never>;
 }

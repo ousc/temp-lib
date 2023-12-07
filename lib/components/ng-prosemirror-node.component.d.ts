@@ -20,5 +20,5 @@ export declare abstract class NgProsemirrorNode implements AfterViewInit {
     ngAfterViewInit(): void;
     onNodeViewReady: EventEmitter<CoreNodeView<NgEditorViewComponent>>;
     static ɵfac: i0.ɵɵFactoryDeclaration<NgProsemirrorNode, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<NgProsemirrorNode, "ng-prosemirror-node", never, { "key": { "alias": "key"; "required": false; }; "provider": { "alias": "provider"; "required": false; }; }, { "onNodeViewReady": "onNodeViewReady"; }, never, never, true, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<NgProsemirrorNode, "ng-prosemirror-node", never, { "key": { "alias": "key"; "required": false; }; "provider": { "alias": "provider"; "required": false; }; }, { "onNodeViewReady": "onNodeViewReady"; }, never, never, true, never>;
 }

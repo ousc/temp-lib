@@ -6,5 +6,5 @@ export declare abstract class NgProsemirrorEditor {
     constructor(el: ElementRef);
     provider: NgProsemirrorAdapterProvider;
     static ɵfac: i0.ɵɵFactoryDeclaration<NgProsemirrorEditor, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<NgProsemirrorEditor, "ng-prosemirror-editor", never, {}, {}, never, never, true, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<NgProsemirrorEditor, "ng-prosemirror-editor", never, {}, {}, never, never, true, never>;
 }

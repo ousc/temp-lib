@@ -15,5 +15,5 @@ export declare abstract class NgProsemirrorPlugin implements AfterViewInit {
     get prevState(): import("prosemirror-state").EditorState;
     ngAfterViewInit(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<NgProsemirrorPlugin, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<NgProsemirrorPlugin, "ng-prosemirror-plugin", never, { "key": { "alias": "key"; "required": false; }; "provider": { "alias": "provider"; "required": false; }; }, { "onPluginReady": "onPluginReady"; }, never, never, true, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<NgProsemirrorPlugin, "ng-prosemirror-plugin", never, { "key": { "alias": "key"; "required": false; }; "provider": { "alias": "provider"; "required": false; }; }, { "onPluginReady": "onPluginReady"; }, never, never, true, never>;
 }

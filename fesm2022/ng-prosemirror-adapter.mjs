@@ -1,5 +1,5 @@
 import * as i0 from '@angular/core';
-import { Injectable, Component, ContentChild, EventEmitter, Input, Output } from '@angular/core';
+import { Injectable, Directive, Component, ContentChild, EventEmitter, Input, Output } from '@angular/core';
 import { Decoration } from 'prosemirror-view';
 import { CoreNodeView, CorePluginView, CoreWidgetView } from '@prosemirror-adapter/core';
 import { nanoid } from 'nanoid';
@@ -184,12 +184,15 @@ class NgProsemirrorEditor {
     constructor(el) {
         this.el = el;
     }
-    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: NgProsemirrorEditor, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "17.0.5", type: NgProsemirrorEditor, isStandalone: true, selector: "ng-prosemirror-editor", ngImport: i0, template: ``, isInline: true }); }
+    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: NgProsemirrorEditor, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Directive }); }
+    static { this.ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "17.0.5", type: NgProsemirrorEditor, isStandalone: true, selector: "ng-prosemirror-editor", ngImport: i0 }); }
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: NgProsemirrorEditor, decorators: [{
-            type: Component,
-            args: [{ selector: 'ng-prosemirror-editor', template: ``, standalone: true }]
+            type: Directive,
+            args: [{
+                    selector: 'ng-prosemirror-editor',
+                    standalone: true
+                }]
         }], ctorParameters: () => [{ type: i0.ElementRef }] });
 
 class NgProsemirrorAdapterProvider {
@@ -257,12 +260,15 @@ class NgProsemirrorNode {
         this.onNodeViewReady.emit(null);
         this.context?.contentRef(this.el.nativeElement);
     }
-    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: NgProsemirrorNode, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "17.0.5", type: NgProsemirrorNode, isStandalone: true, selector: "ng-prosemirror-node", inputs: { key: "key", provider: "provider" }, outputs: { onNodeViewReady: "onNodeViewReady" }, ngImport: i0, template: ``, isInline: true }); }
+    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: NgProsemirrorNode, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Directive }); }
+    static { this.ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "17.0.5", type: NgProsemirrorNode, isStandalone: true, selector: "ng-prosemirror-node", inputs: { key: "key", provider: "provider" }, outputs: { onNodeViewReady: "onNodeViewReady" }, ngImport: i0 }); }
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: NgProsemirrorNode, decorators: [{
-            type: Component,
-            args: [{ selector: 'ng-prosemirror-node', template: ``, standalone: true }]
+            type: Directive,
+            args: [{
+                    selector: 'ng-prosemirror-node',
+                    standalone: true
+                }]
         }], ctorParameters: () => [{ type: i0.ElementRef }], propDecorators: { key: [{
                 type: Input
             }], provider: [{
@@ -291,12 +297,15 @@ class NgProsemirrorPlugin {
     ngAfterViewInit() {
         this.onPluginReady.emit(null);
     }
-    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: NgProsemirrorPlugin, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "17.0.5", type: NgProsemirrorPlugin, isStandalone: true, selector: "ng-prosemirror-plugin", inputs: { key: "key", provider: "provider" }, outputs: { onPluginReady: "onPluginReady" }, ngImport: i0, template: ``, isInline: true }); }
+    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: NgProsemirrorPlugin, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Directive }); }
+    static { this.ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "17.0.5", type: NgProsemirrorPlugin, isStandalone: true, selector: "ng-prosemirror-plugin", inputs: { key: "key", provider: "provider" }, outputs: { onPluginReady: "onPluginReady" }, ngImport: i0 }); }
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: NgProsemirrorPlugin, decorators: [{
-            type: Component,
-            args: [{ selector: 'ng-prosemirror-plugin', template: ``, standalone: true }]
+            type: Directive,
+            args: [{
+                    selector: 'ng-prosemirror-plugin',
+                    standalone: true
+                }]
         }], ctorParameters: () => [{ type: i0.ElementRef }], propDecorators: { key: [{
                 type: Input
             }], provider: [{
@@ -325,12 +334,15 @@ class NgProsemirrorWidget {
     ngAfterViewInit() {
         this.onWidgetViewReady.emit(null);
     }
-    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: NgProsemirrorWidget, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "17.0.5", type: NgProsemirrorWidget, isStandalone: true, selector: "ng-prosemirror-widget", inputs: { key: "key", provider: "provider" }, outputs: { onWidgetViewReady: "onWidgetViewReady" }, ngImport: i0, template: ``, isInline: true }); }
+    static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: NgProsemirrorWidget, deps: [{ token: i0.ElementRef }], target: i0.ɵɵFactoryTarget.Directive }); }
+    static { this.ɵdir = i0.ɵɵngDeclareDirective({ minVersion: "14.0.0", version: "17.0.5", type: NgProsemirrorWidget, isStandalone: true, selector: "ng-prosemirror-widget", inputs: { key: "key", provider: "provider" }, outputs: { onWidgetViewReady: "onWidgetViewReady" }, ngImport: i0 }); }
 }
 i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.0.5", ngImport: i0, type: NgProsemirrorWidget, decorators: [{
-            type: Component,
-            args: [{ selector: 'ng-prosemirror-widget', template: ``, standalone: true }]
+            type: Directive,
+            args: [{
+                    selector: 'ng-prosemirror-widget',
+                    standalone: true
+                }]
         }], ctorParameters: () => [{ type: i0.ElementRef }], propDecorators: { key: [{
                 type: Input
             }], provider: [{
