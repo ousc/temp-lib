@@ -96,9 +96,9 @@ class NgProsemirrorAdapterService {
                                 },
                             }
                         });
+                        this.updatePluginViewContext(key);
                         firstElementChild(this.provider.editor.el.nativeElement).appendChild(componentRef.location.nativeElement);
                         this.pluginView[key].update(view, view.state);
-                        this.updatePluginViewContext(key);
                         return this.pluginView[key];
                     });
                 });
@@ -125,8 +125,8 @@ class NgProsemirrorAdapterService {
                 });
                 return Decoration.widget(pos, (view, getPos) => {
                     this.widgetView[key].bind(view, getPos);
-                    firstElementChild(this.widgetView[key].dom).appendChild(componentRef.location.nativeElement);
                     this.updateWidgetViewContext(key);
+                    firstElementChild(this.widgetView[key].dom).appendChild(componentRef.location.nativeElement);
                     return this.widgetView[key].dom;
                 }, spec);
             };
